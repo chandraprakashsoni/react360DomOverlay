@@ -1,0 +1,187 @@
+.slide1 {
+  background: url("../src/assets/Slide2.jpeg") no-repeat;
+  background-size: cover;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+.slide2 {
+  background: url("../src/assets/Slide1.jpg") no-repeat;
+  background-size: cover;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+.slide3 {
+  background: url("../src/assets/Slide3.jpeg") no-repeat;
+  background-size: cover;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+.next-button-main {
+  height: 84px;
+  width: 84px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -42px; }
+
+.next-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 76px;
+  height: 76px;
+  text-align: center;
+  border: 1.2px solid #FFFFFF;
+  border-radius: 50%;
+  transition: width 0.15s, height 0.15s; }
+
+.next-button:hover {
+  width: 83px;
+  height: 83px; }
+
+@keyframes changeposition {
+  from {
+    top: -23px; }
+  10%, 90% {
+    top: 1px; }
+  to {
+    top: 15px; } }
+
+.next-button-img {
+  margin-top: 27px;
+  height: 23px;
+  width: 23px;
+  position: relative;
+  animation: changeposition;
+  animation-iteration-count: infinite;
+  animation-duration: 3s; }
+
+.user-exp {
+  background-color: #4c7aaf;
+  /* Green */
+  border: none;
+  height: 50px;
+  width: 250px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+  left: 40%;
+  top: 50%; }
+
+/* ---- Typewriter effect CSS ---- */
+.typewriter p {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .03em solid #FFFFFF;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em;
+  /* Adjust as needed */
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: #FFFFFF; } }
+
+/* ---- Multiple text effect ---- */
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 1;
+    top: 0px; }
+  to {
+    opacity: 0;
+    top: -5px; } }
+
+.text-animated-one {
+  display: inline;
+  position: relative;
+  top: 0px;
+  -webkit-animation: fade-in 2s infinite; }
+
+.text-animated-two {
+  opacity: 0;
+  display: inline;
+  position: relative;
+  margin-left: -56px;
+  -webkit-animation: fade-in 2s infinite;
+  -webkit-animation-delay: 1s; }
+
+.aggettivi {
+  display: inline;
+  width: 100px;
+  height: 100px; }
+
+/* --- Fade-in text -- */
+.test p {
+  margin-top: 0px;
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  position: relative; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.container-main {
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 10000000000000;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  opacity: 1;
+  pointer-events: auto; }
+
+.content {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 20px 40px; }
+
+.close {
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-top: -15px;
+  margin-right: -15px;
+  background: url("x.png") center center no-repeat;
+  background-size: 30px;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.2s; }
+
+.close:hover {
+  opacity: 1; }
